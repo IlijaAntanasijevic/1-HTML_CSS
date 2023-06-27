@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="decription" content="Na ovoj stranici mozete kontaktirati firmu Sonic i videti na mapi gde se nalazimo"/>
+    <meta name="keywords" content="kontaktirajte nas,gde se nalazimo,mapa"/>
+    <title>Kontakt</title>
+
+    <!-- Fav Icon -->
+    <link rel="shortcut icon" href="../images/logo.ico" type="image/x-icon"/>
+
+
+    <!-- Material Design Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css"/>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Murecho:wght@300&display=swap" rel="stylesheet"/>
+
+    <!-- Css Template -->
+    <link rel="stylesheet" type="text/css" href="../css/style.css"/>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="center-block">
+            <div id="logo">
+                <a href="../index.html"><h1>Sonic</h1></a>
+            </div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="../index.html">Početna</a>
+                    </li>
+                    <li>
+                        <a href="gallery.html">Galerija</a>
+                    </li>
+                    <li  class="active-link">
+                        <a href="contact.html">Kontakt</a>
+                    </li>
+                    <li>
+                        <a href="author.html">Autor</a>
+                    </li>
+                </ul>
+                <div class="cleaner"></div>
+            </nav>
+        </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- Address -->
+    <div class="center-block">
+        <div id="address">
+            
+            <h3>Nikole Pašića 1, Paraćin 35250, Srbija </h3>
+            <object data="https://www.openstreetmap.org/export/embed.html?bbox=21.410377%2C43.8632523%2C21.412377%2C43.8612523&layer=mapnik&marker=43.8622523%2C21.411377" class="map"></object>
+        <div class="cleaner"></div>
+        </div>
+        <!-- End Address -->
+
+        <!-- Form -->
+    <div id="form">
+        <h2>Kontaktirajte nas</h2>
+            <form method="post" id="forma-1" action="contact.php">
+                <div id="area">
+                    <div class="text">
+                        <label for="ime">Ime:</label>
+                        <input type="text" id="ime" name="name"  required />
+                        <label for="lastname">Prezime:</label>
+                        <input type="text" id="lastname" name="lastname"  required />
+                        <label for="email">email:</label>
+                        <input type="email" id="email" name="email" required />
+                    </div>
+                </div>
+        
+                <textarea id="textarea" name="tekst" rows="4" cols="10"  required ></textarea>
+                <div class="cleaner"></div>
+                <input type="submit" id="send" name="send" value="Pošalji"/>
+                <input type="reset" id="reset" name="reset" value="Poništi"/>
+            </form>
+        </div>
+    </div>
+
+<!-- End Form -->
+
+
+<!-- Foooter -->
+<footer id="ftr">
+    <div class="center-block">
+        <div id="phone">
+            <a href="tel:+3812233565">
+                <i class="zmdi zmdi-phone ph"></i>
+                +381 2233 565
+            </a>
+        </div>
+        <div id="copyright">
+            <h4>&copy; Ilija <a href="/pages/author.html"><span class="clr-bl">Antanasijević</span></a></h4>
+        </div>
+        <section class="icons">
+                <ul>
+                    <li>
+                        <a href="../index.html">
+                            <i class="zmdi zmdi-home"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/" target="_blank">
+                            <i class="zmdi zmdi-facebook-box"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/" target="_blank">
+                            <i class="zmdi zmdi-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.google.com/intl/sr/gmail/about/#" target="_blank">
+                            <i class="zmdi zmdi-email"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../rss.xml">
+                            <i class="zmdi zmdi-rss"></i>
+                        </a>
+                    </li>
+                </ul>
+        </section>
+        
+        <div class="cleaner"></div>
+    </div>
+   
+</footer>
+
+
+</body>
+</html>
+
